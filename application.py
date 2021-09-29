@@ -51,7 +51,7 @@ class RequestHandler(BaseHTTPRequestHandler):
 
 def run():
     print('http server is starting...')
-    server_address = ('127.0.0.1', 8080)
+    server_address = ('0.0.0.0', 8080)
     httpd = HTTPServer(server_address, RequestHandler)
     try:
         print('http server is running...')
